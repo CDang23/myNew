@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="/lib/vue.global.js"></script>
+    <script src="/src/index.js" defer></script>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./../font/themify-icons/themify-icons.css">
+
+</head>
+
+<body class="h-full w-full bg-cover bg-center bg-no-repeat" style="background-image: url(https://cdn.pixabay.com/photo/2023/03/27/13/57/13-57-33-559_1280.jpg);">
+    <div class="place-content-center flex font-sans font-normal mt-[120px]">
+        <div>
+            <div class="pb-7 text-center">
+                <!--Begin sign in text-->
+
+                <h2 class="text-2xl tracking-wide">
+                    Log in to your account
+                </h2>
+
+                <div class="flex mt-1 text-sm justify-center">
+                    <h2> and </h2>
+                    <li class="list-none px-2 text-[#4F46E5]">
+                        <a href="">enjoy our community</a>
+                    </li>
+                </div>
+            </div>
+            <!--End sign in text-->
+
+            <!--Begin login box-->
+
+            <div id="login_box" class="border-solid border-2 rounded-md px-10 pt-8 pb-6">
+
+                <!--Email box start-->
+                <div id="emailAdd">
+                    <h1 class="text-sm">Email address</h1>
+                    <input type="text" class="h-[38px] w-[368px] border-solid border-2 rounded-md">
+                </div>
+                <!--Email box end-->
+
+                <!--Pass box start-->
+                <div id="password" class="pt-6">
+                    <h1 class="text-sm">Password</h1>
+                    <input type="password" class="h-[38px] w-[368px] border-solid border-2 rounded-md">
+                </div>
+                <!--Pass box end-->
+
+                <!--Sign in option start-->
+                <div id="sigInOp" class="flex text-sm justify-between pt-6">
+                    <div>
+                        <input type="checkbox"> Remeber password
+                    </div>
+
+                    <li class="list-none px-2 text-[#4F46E5]">
+                        <a href="">Forgot your password?</a>
+                    </li>
+                </div>
+                <!--Sign in option start-->
+                <!--Sign in button start-->
+                <div class="pt-6">
+                    <button id="signInBtn" class="h-9 w-[368px] bg-red-400 text-white rounded-md">Sign in</button>
+                </div>
+
+                <!--Sign in button end-->
+
+                <div id="socialLogin">
+                    <div class="pt-6 justify-between flex">
+                        <div class=" mt-[9px] border-solid border-[1px] w-[124px] h-[1px]"></div>
+                        <h1 class="text-sm">Or continue with</h1>
+                        <div class="mt-[9px] border-solid border-[1px] w-[124px] h-[1px]"></div>
+                    </div>
+                    <div class="pt-6 justify-between flex">
+                        <button type="button" onclick="location.href='https://facebook.com'"
+                            class="ti-facebook border-solid border-[1px] w-[115px] h-[38px] rounded-md"></a>
+                            <button
+                                class="ti-twitter-alt border-solid border-[1px] w-[115px] h-[38px] rounded-md"></button>
+                            <button class="ti-github border-solid border-[1px] w-[115px] h-[38px] rounded-md"></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--End login box-->
+    </div>
+</body>
+
+</html>

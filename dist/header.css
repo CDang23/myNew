@@ -1,0 +1,8 @@
+@layer components {
+    .login li a {
+        @apply py-0 px-4
+    }
+    .login>li:hover>a{
+        @apply block items-center text-blue-400
+    }
+}
